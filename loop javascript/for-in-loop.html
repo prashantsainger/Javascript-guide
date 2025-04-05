@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const techs = ["HTML","CSS","Javascript","React","Node","java","Python"];
+
+        for(tech in techs){
+            document.write(`<h1>${techs[tech]}:${tech}</h1>`);
+        }
+
+        let objs = {
+            a: "HTML",
+            b: "CSS",
+            c: "React",
+            d: "Java",
+            e: "Node",
+            f: "Python"
+        }
+        for(obj in objs){
+            document.write(`<h1>${obj}:${objs[obj]}</h1>`);
+        }
+    </script>
+</body>
+</html>

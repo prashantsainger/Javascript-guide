@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.text-warning{
+    width: 100%;
+    height: 10vh;
+    background-color: blue;
+}
+
+
+    </style>
+</head>
+<body>
+
+
+    <li class = "text-warning"></li>
+
+
+    <script>
+
+const result = {
+    success: ["max","end","arrow-function"],
+    failure: ["no-var","var-on-top","linebreak"],
+    skipped: ["blacklist","keys"]
+};
+
+function makeList (arr) {
+    "use strict";
+
+    const resultDisplayArray = ["max","end","arrow-function"];
+    for(let i= 0; i< 5; i++) {
+        resultDisplayArray.push(`<li class = "text-warning">${arr[i]}</li>`);
+    }
+
+        return resultDisplayArray;
+    
+}
+document.write(`${resultDisplayArray.push}`);
+
+
+    </script>
+</body>
+</html>

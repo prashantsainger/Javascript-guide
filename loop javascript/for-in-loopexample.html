@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg0 {
+            background-color: chocolate;
+        }
+
+        .bg1 {
+            background-color: blueviolet;
+        }
+
+        .bg2 {
+            background-color: tomato;
+        }
+
+        .bg3 {
+            background-color: brown;
+        }
+
+        .bg4 {
+            background-color: gray;
+        }
+
+        .bg5 {
+            background-color: goldenrod;
+        }
+
+        .bg6 {
+            background-color: lightslategrey;
+        }
+
+
+        .card {
+            width: 24%;
+            height: 24vh;
+            /* background-color: aqua; */
+            border: 1px solid black;
+            display: grid;
+            justify-content:space-evenly;
+            margin-left: 1%;
+            margin-bottom: 1vh;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let users = [{
+            "id": 1,
+            "name": "user1",
+            "email": "abc@gmail.com"
+        },
+        {
+            "id": 2,
+            "name": "user2",
+            "email": "xyz@gmail.com"
+        },
+        {
+            "id": 3,
+            "name": "user3",
+            "email": "def@gmail.com"
+        }]
+        for (user in users) {
+            document.write(`<div class="card bg${user}">
+                <h1>${users[user].id}</h1>
+                <h1>${users[user].name}</h1>
+                <h1>${users[user].email}</h1>
+              </div>`
+            );
+        }
+    </script>
+</body>
+
+</html>

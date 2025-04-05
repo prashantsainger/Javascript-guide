@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .bg0 {
+            background-color:blue;
+        }
+
+        .bg1 {
+            background-color: blueviolet;
+        }
+
+        .bg2 {
+            background-color: tomato;
+        }
+
+        .bg3 {
+            background-color: brown;
+        }
+
+        .bg4 {
+            background-color: gray;
+        }
+
+        .bg5 {
+            background-color: goldenrod;
+        }
+
+        .bg6 {
+            background-color: lightslategrey;
+        }
+        .crd{
+            display: flex;
+            justify-content: space-between;
+            gap: 1%;
+            
+        }
+
+        .card {
+            width: 24%;
+            height: 24vh;
+            border: 1px solid black;
+            display: flex;
+            padding: 1% 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>1</h1>
+    <h1>2</h1>
+    <h1>3</h1>
+    <h1>4</h1>
+    <h1>5</h1>
+    <h1>6</h1>
+    <h1>7</h1>
+    <h1>8</h1>
+    <h1>9</h1>
+    <h1>10</h1> -->
+    
+    <table border="1">
+        
+        
+            
+        <script>
+            
+
+            // while (condition){
+            //     document.write(`<h1>data</h1>`);
+
+            // }
+            // let count = 0;
+            // while (count<=10){
+            //     document.write(`<h1>${count}</h1>`);
+            //         count++;
+            // }
+
+            let count = 0;
+            const user = ["HTML", "Java", "Javascript", "React", "Node", "Java", "Python"];
+            console.log(user);
+
+
+           do {
+                document.write(`<div class="card bg${count}"></div>`);
+                document.write(`<h1>${count}</h1>`);
+                document.write(`<h2>${user[count]}</h2>`);
+                count++;
+            }    while(count <= 6);
+
+        </script>
+        
+        </table>
+    
+    
+</body>
+
+</html>

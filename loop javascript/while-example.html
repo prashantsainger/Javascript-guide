@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg0 {
+            background-color: chocolate;
+        }
+
+        .bg1 {
+            background-color: blueviolet;
+        }
+
+        .bg2 {
+            background-color: tomato;
+        }
+
+        .bg3 {
+            background-color: brown;
+        }
+
+        .bg4 {
+            background-color: gray;
+        }
+
+        .bg5 {
+            background-color: goldenrod;
+        }
+
+        .bg6 {
+            background-color: lightslategrey;
+        }
+        .row{
+            width: 100%;
+            height: 100vh;
+        }
+        .card {
+            width: 24%;
+            height: 50vh;
+            /* background-color: aqua; */
+            border: 1px solid black;
+            display: grid;
+            justify-content:space-evenly;
+            margin-left: 1%;
+            margin-bottom: 1vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <script>
+            let photo = ["images2.jpg"];
+            let name = ['user1',"user2","user3"];
+            let email = ['user1@gmail.com',"user2@gmail.com","user3@gmail.com"];
+        
+            let count = 0;
+            while (count < name.length){
+                document.write(`<div class="card bg${count}">
+                <h1>Name : ${name[count]}</h1>
+                <h2>Email : ${email[count]}</h2>
+                <h2>Email</h2>
+                
+                
+                </div>`);
+                count++;
+            
+            }
+        </script>
+    </div>
+</body>
+</html>

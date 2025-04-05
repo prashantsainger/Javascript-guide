@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .bg0 {
+            background-color:chocolate;
+        }
+
+        .bg1 {
+            background-color: blueviolet;
+        }
+
+        .bg2 {
+            background-color: tomato;
+        }
+
+        .bg3 {
+            background-color: brown;
+        }
+
+        .bg4 {
+            background-color: gray;
+        }
+
+        .bg5 {
+            background-color: goldenrod;
+        }
+
+        .bg6 {
+            background-color: lightslategrey;
+        }
+        .card {
+            width: 5%;
+            height: 5vh;
+            /* background-color: aqua; */
+            border: 1px solid black;
+            display: flex;
+            justify-content:space-evenly;
+            margin-left: 1%;
+            margin-bottom: 1vh;
+        }
+        </style>
+</head>
+<body>
+    <table border="">
+        
+
+    <script>
+        let count = 1;
+        while (count<=10){document.write(`<div class="card bg${count}">
+            <td>
+            <h1>${count*2}</h1>
+            
+            </td></div>`);
+            count++;
+        }
+       
+    </script>
+            
+    
+    </table>
+</body>
+</html>
